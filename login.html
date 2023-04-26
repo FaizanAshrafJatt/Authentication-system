@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+  form {
+	margin: 50px auto;
+	width: 300px;
+	background: #daf6ff;
+	padding: 20px 60px;
+	border-radius: 5px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+label, input {
+	display: block;
+	margin-bottom: 10px;
+}
+
+ input[type="email"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+input[type="submit"] {
+	background: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+	</form>
+	<form>
+		<h2>Login Form</h2>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="login-email" name="email" placeholder="Enter Email">
+		
+		<label for="password">Password:</label>
+		<input type="password" id="login-password" name="password" placeholder="Enter Password">
+		
+		<input type="submit" value="Login" onclick="login()">
+		
+		<div>
+			<a href="#" onclick="signupLink()">Sign-up</a>
+		</div>
+	</form>
+	<script src="./javscript.js"></script>
+</body>
+</html>
