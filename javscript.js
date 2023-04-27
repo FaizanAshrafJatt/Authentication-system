@@ -42,3 +42,13 @@ function loginLink() {
 function signupLink() {
   window.location.href = './index.html';
 }
+// This code runs when the page loads with email and password parameters in the URL
+const urlParams = new URLSearchParams(window.location.search);
+const email = urlParams.get('email');
+const password = urlParams.get('password');
+
+if (email && password) {
+  document.getElementById('login-email').value = email;
+  document.getElementById('login-password').value = password;
+  login();
+}
