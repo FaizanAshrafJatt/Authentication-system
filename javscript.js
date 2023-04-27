@@ -32,11 +32,11 @@ function login() {
     return;
   }
 
-  window.location.href = './pages/dashboard.html';
+  window.location.href = './dashboard.html';
 }
 
 function loginLink() {
-  window.location.href = './pages/login.html';
+  window.location.href = './login.html';
 }
 
 function signupLink() {
